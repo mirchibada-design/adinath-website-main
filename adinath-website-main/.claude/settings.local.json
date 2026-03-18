@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 \"C:/Users/ragha.DESKTOP-CP14KCA/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/fa53851d-1a70-434a-8748-9ba62f7391c7/c316236f-1135-4198-8e89-5d063d6c6ed0/skills/ui-ux-pro-max/scripts/search.py\" \"luxury real estate apartments minimal cinematic premium\" --design-system -p \"ANANTAM by Adinath Buildwell\" -f markdown)",
+      "Bash(python \"C:/Users/ragha.DESKTOP-CP14KCA/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/fa53851d-1a70-434a-8748-9ba62f7391c7/c316236f-1135-4198-8e89-5d063d6c6ed0/skills/ui-ux-pro-max/scripts/search.py\" \"luxury real estate premium minimal cinematic\" --design-system -p \"ANANTAM\" -f markdown)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where npm:*)",
+      "Bash(\"C:/Program Files/nodejs/npm.cmd\" install)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Bash(ffprobe -v quiet -print_format json -show_streams -show_format 'E:/Adinath Website VC/public/videos/experience.mp4')",
+      "Bash(node -e \"const d=require\\(''''fs''''\\).readFileSync\\(''''/dev/stdin'''',''''utf8''''\\); const j=JSON.parse\\(d\\); const v=j.streams.find\\(s=>s.codec_type===''''video''''\\); console.log\\(''''Duration:'''',j.format.duration,''''s''''\\); console.log\\(''''Codec:'''',v?.codec_name\\); console.log\\(''''Keyframe interval \\(r_frame_rate\\):'''',v?.r_frame_rate\\); console.log\\(''''Size:'''',Math.round\\(j.format.size/1024/1024*10\\)/10,''''MB''''\\);\")",
+      "Bash(ffprobe -v quiet -show_entries format=duration,size -show_entries stream=codec_name,codec_type,r_frame_rate -of default \"E:/Adinath Website VC/public/videos/experience.mp4\")",
+      "Bash(grep -v \"//.*''''\")",
+      "Bash(grep -v \"^\\\\s*//\")",
+      "Bash(npx next:*)"
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+/* ─────────────────────────────────────────────────────────────
+   globals.css — ANANTAM by Adinath Buildwell
+   Base styles, CSS variables, custom scrollbar, utilities
+───────────────────────────────────────────────────────────── */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Custom Properties ──────────────────────────────── */
+:root {
+  --color-gold: #DFC15E;
+  --color-gold-light: #EDD98A;
+  --color-gold-dark: #B89B3A;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-dark: #0A0A0A;
+  --color-dark-2: #111111;
+  --color-dark-3: #1A1A1A;
+
+  /* Section transition duration */
+  --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── Base Reset & Defaults ──────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Smooth scrolling for anchor links */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  /* Prevent horizontal overflow on mobile */
+  max-width: 100vw;
+}
+
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: var(--font-dm-sans), 'DM Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  /* Anti-aliasing for crisp text on dark backgrounds */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ─── Custom Scrollbar ────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #DFC15E;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #EDD98A;
+}
+
+/* ─── Text Selection ──────────────────────────────────────── */
+::selection {
+  background-color: #DFC15E;
+  color: #000000;
+}
+::-moz-selection {
+  background-color: #DFC15E;
+  color: #000000;
+}
+
+/* ─── Focus Styles (Accessibility) ───────────────────────── */
+:focus-visible {
+  outline: 2px solid #DFC15E;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ─── Typography Utilities ────────────────────────────────── */
+.font-playfair {
+  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+}
+.font-dm-sans {
+  font-family: var(--font-dm-sans), 'DM Sans', system-ui, sans-serif;
+}
+
+/* ─── Gold Color Utility ──────────────────────────────────── */
+.text-gold {
+  color: #DFC15E;
+}
+.bg-gold {
+  background-color: #DFC15E;
+}
+.border-gold {
+  border-color: #DFC15E;
+}
+
+/* ─── Section Spacing Utility ─────────────────────────────── */
+.section-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+/* ─── Gradient Overlays ───────────────────────────────────── */
+.gradient-fade-bottom {
+  background: linear-gradient(to bottom, transparent 60%, #000000 100%);
+}
+.gradient-fade-top {
+  background: linear-gradient(to top, transparent 60%, #000000 100%);
+}
+
+/* ─── Cinematic Image Placeholder ────────────────────────── */
+/* Used while real images are not yet available */
+.image-placeholder {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2520 50%, #1a1a1a 100%);
+  position: relative;
+  overflow: hidden;
+}
+.image-placeholder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(223, 193, 94, 0.04) 50%,
+    transparent 60%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to { background-position: 200% 0; }
+}
+
+/* ─── Smooth Transition Utility ───────────────────────────── */
+.transition-smooth {
+  transition: all 0.3s var(--transition-smooth);
+}
+
+/* ─── Gold Line Divider ───────────────────────────────────── */
+.gold-line {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #DFC15E, transparent);
+}
+
+/* ─── Hide scrollbar for horizontal scroll containers ─────── */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ─── Animate on scroll (used as fallback for no-JS) ─────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
