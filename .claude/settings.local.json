@@ -7,7 +7,12 @@
       "Bash(findstr :3000)",
       "Bash(start \"\" \"http://localhost:3000/#figmacapture=b5df9028-a804-43d6-84b3-4940c61a36bb&figmaendpoint=https%3A%2F%2Fmcp.figma.com%2Fmcp%2Fcapture%2Fb5df9028-a804-43d6-84b3-4940c61a36bb%2Fsubmit&figmadelay=1000\")",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(start \"\" \"http://localhost:3000/#figmacapture=28e50403-2162-4630-9eab-c4897aaf54a5&figmaendpoint=https%3A%2F%2Fmcp.figma.com%2Fmcp%2Fcapture%2F28e50403-2162-4630-9eab-c4897aaf54a5%2Fsubmit&figmadelay=1000\")",
+      "mcp__plugin_figma_figma__get_design_context",
+      "mcp__plugin_figma_figma__get_screenshot",
+      "mcp__claude_ai_Figma__get_design_context",
+      "mcp__claude_ai_Figma__get_screenshot"
     ]
   }
 }

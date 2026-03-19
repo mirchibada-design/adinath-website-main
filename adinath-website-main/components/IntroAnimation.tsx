@@ -102,14 +102,17 @@ export default function IntroAnimation() {
                 duration: phase === 'enter' ? 0.6
                   : phase === 'zoom' ? 0.95
                   : 0.4,
-                // Spring-like ease for zoom, sharp ease-in for burst
                 ease: phase === 'burst'
                   ? [0.4, 0, 1, 1]
                   : [0.4, 0, 0.2, 1],
               },
             }}
           >
-            <LogoMark />
+            <img
+              src="/logo/anantam-logo.svg"
+              alt="Anantam Logo"
+              style={{ width: 320, height: 'auto', maxWidth: '80vw' }}
+            />
           </motion.div>
 
           {/* ── Ambient gold radial glow ─────────────────── */}
@@ -158,69 +161,3 @@ export default function IntroAnimation() {
   );
 }
 
-// ─── LogoMark SVG ─────────────────────────────────────────────
-// Inline SVG placeholder logo.
-//
-// TO REPLACE WITH YOUR REAL LOGO:
-//   Option A (SVG file):
-//     import Image from 'next/image';
-//     <Image src="/images/logo.svg" width={320} height={90} alt="ANANTAM" priority />
-//
-//   Option B (inline SVG):
-//     Replace the <svg> below with your brand SVG code.
-//     Keep width/height similar so the animation scale works correctly.
-// ─────────────────────────────────────────────────────────────
-function LogoMark() {
-  return (
-    <svg
-      width="340"
-      height="90"
-      viewBox="0 0 340 90"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-label="ANANTAM by Adinath Buildwell"
-      role="img"
-    >
-      {/* ── Primary wordmark ────────────────────────────── */}
-      <text
-        x="170"
-        y="52"
-        textAnchor="middle"
-        dominantBaseline="middle"
-        fontFamily="'Playfair Display', Georgia, serif"
-        fontSize="44"
-        fontWeight="300"
-        letterSpacing="14"
-        fill="#FFFFFF"
-      >
-        ANANTAM
-      </text>
-
-      {/* ── Gold divider line ────────────────────────────── */}
-      <line
-        x1="100"
-        y1="68"
-        x2="240"
-        y2="68"
-        stroke="#DFC15E"
-        strokeWidth="0.6"
-        opacity="0.7"
-      />
-
-      {/* ── Developer sub-label ──────────────────────────── */}
-      <text
-        x="170"
-        y="80"
-        textAnchor="middle"
-        dominantBaseline="middle"
-        fontFamily="'DM Sans', system-ui, sans-serif"
-        fontSize="8"
-        letterSpacing="5"
-        fill="#DFC15E"
-        opacity="0.65"
-      >
-        BY ADINATH BUILDWELL
-      </text>
-    </svg>
-  );
-}

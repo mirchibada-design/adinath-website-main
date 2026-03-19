@@ -54,7 +54,7 @@ export default function LocationAdvantage() {
         />
 
         {/* ── Two Column Layout ─────────────────────────────── */}
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-10 lg:gap-20 items-start">
 
           {/* ── Left: Map Placeholder ─────────────────────── */}
           <motion.div
@@ -62,7 +62,7 @@ export default function LocationAdvantage() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.9, ease: [0.4, 0, 0.2, 1] }}
-            className="relative aspect-[4/3] overflow-hidden border border-white/8"
+            className="relative overflow-hidden border border-white/10 rounded-2xl min-h-[350px] lg:min-h-[520px]"
             aria-label="Location map — Jodhpur, Rajasthan"
           >
             {/*
@@ -201,7 +201,12 @@ function MapVisualization() {
 
         {/* Central dot */}
         <div className="relative z-10">
-          <div className="w-3 h-3 bg-gold rounded-full" aria-hidden="true" />
+          <motion.div
+            animate={{ boxShadow: ['0 0 6px rgba(223,193,94,0.4)', '0 0 18px rgba(223,193,94,0.7)', '0 0 6px rgba(223,193,94,0.4)'] }}
+            transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut' }}
+            className="w-3 h-3 bg-gold rounded-full"
+            aria-hidden="true"
+          />
           <div className="absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap">
             <span className="font-dm-sans text-[10px] text-gold/80 tracking-widest uppercase">
               ANANTAM

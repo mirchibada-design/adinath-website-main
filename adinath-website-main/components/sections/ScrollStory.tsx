@@ -46,6 +46,8 @@ export default function ScrollStory() {
     const building = el.querySelector<HTMLElement>('.building-reveal');
     const buildingInner = el.querySelector<HTMLElement>('.building-inner');
 
+    const glowEl = el.querySelector<HTMLElement>('.building-glow');
+
     if (!frames.length || !building || !buildingInner) return;
 
     // Create a timeline pinned to the section
@@ -60,20 +62,30 @@ export default function ScrollStory() {
       },
     });
 
-    // Building: clip-path reveals from bottom to top as you scroll
+    // Building: construction reveal — clip-path bottom→top + upward drift
     tl.fromTo(
       buildingInner,
-      { clipPath: 'inset(100% 0% 0% 0%)' },
-      { clipPath: 'inset(0% 0% 0% 0%)', duration: STORY_FRAMES.length, ease: 'none' }
+      { clipPath: 'inset(100% 0% 0% 0%)', y: 24, opacity: 0 },
+      { clipPath: 'inset(0% 0% 0% 0%)', y: 0, opacity: 1, duration: STORY_FRAMES.length, ease: 'power2.out' }
     );
 
-    // Building subtle scale
+    // Building container: fade in slightly behind the inner reveal
     tl.fromTo(
       building,
-      { scale: 1.1, opacity: 0.6 },
-      { scale: 1, opacity: 1, duration: STORY_FRAMES.length, ease: 'none' },
-      '<' // Start at same time as clip-path
+      { opacity: 0 },
+      { opacity: 1, duration: STORY_FRAMES.length * 0.7, ease: 'power2.out' },
+      '<' // Start at same time
     );
+
+    // Gold glow: appears as building rises, staggered slightly after reveal starts
+    if (glowEl) {
+      tl.fromTo(
+        glowEl,
+        { opacity: 0 },
+        { opacity: 1, duration: STORY_FRAMES.length * 0.5, ease: 'power2.out' },
+        `<${STORY_FRAMES.length * 0.08}` // 0.08 stagger offset
+      );
+    }
 
     // Each text frame: fade in, hold, fade out
     frames.forEach((frame, i) => {
@@ -159,8 +171,7 @@ export default function ScrollStory() {
           className="building-reveal hidden lg:flex absolute right-0 top-0 w-1/2 h-full items-end justify-center overflow-hidden"
           aria-hidden="true"
         >
-          {/* Building silhouette placeholder */}
-          {/* Replace this div with an <Image> of the building once available */}
+          {/* Building silhouette — clip-path applied to this container */}
           <div className="building-inner w-full h-full relative">
             {/* Main building shape */}
             <div className="absolute inset-0 flex items-end justify-center">
@@ -169,6 +180,16 @@ export default function ScrollStory() {
             {/* Right gradient fade */}
             <div className="absolute inset-0 bg-gradient-to-l from-black/0 via-transparent to-black/80" />
           </div>
+
+          {/* Gold glow — outside clip-path container, animates separately */}
+          <div
+            className="building-glow absolute bottom-0 left-0 right-0 h-48 pointer-events-none opacity-0"
+            style={{
+              background: 'radial-gradient(ellipse at center bottom, rgba(223,193,94,0.18) 0%, transparent 65%)',
+              filter: 'blur(14px)',
+            }}
+            aria-hidden="true"
+          />
 
           {/* Bottom gradient */}
           <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent z-10" />

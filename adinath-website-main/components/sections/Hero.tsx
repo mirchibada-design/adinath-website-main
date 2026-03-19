@@ -80,31 +80,19 @@ export default function Hero() {
       {/* ── Hero Content ───────────────────────────────────── */}
       <div className="relative z-10 flex flex-col items-center text-center px-6 h-full justify-center">
 
-        {/* Developer label */}
-        <motion.p
-          custom={0.2}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          className="font-dm-sans text-xs tracking-[0.45em] uppercase text-gold/80 mb-5"
+        {/* Full Logo */}
+        <motion.div
+          initial={{ opacity: 0, y: 20, scale: 0.95 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ delay: 0.3, duration: 1.0, ease: [0.4, 0, 0.2, 1] }}
+          className="flex justify-center mb-6"
         >
-          {SITE_CONFIG.developer} Presents
-        </motion.p>
-
-        {/* Main title */}
-        <motion.h1
-          custom={0.5}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          className="
-            font-playfair font-light tracking-[0.25em] uppercase
-            text-[18vw] sm:text-[14vw] md:text-[11vw] lg:text-[9vw] xl:text-[8rem]
-            leading-none text-white
-          "
-        >
-          ANANTAM
-        </motion.h1>
+          <img
+            src="/logo/adinath%20anantam%20logo%20full.png"
+            alt="Adinath Anantam"
+            style={{ width: 'clamp(200px, 30vw, 420px)', height: 'auto' }}
+          />
+        </motion.div>
 
         {/* Gold rule */}
         <motion.div
