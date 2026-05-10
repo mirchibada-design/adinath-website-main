@@ -12,7 +12,11 @@
       "mcp__plugin_figma_figma__get_design_context",
       "mcp__plugin_figma_figma__get_screenshot",
       "mcp__claude_ai_Figma__get_design_context",
-      "mcp__claude_ai_Figma__get_screenshot"
+      "mcp__claude_ai_Figma__get_screenshot",
+      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/acid/Documents/Vibe Coding Projects/Adinath/adinath-website-main/adinath-website-main/public/logo/adinath anantam logo full.png\")",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_evaluate"
     ]
   }
 }
