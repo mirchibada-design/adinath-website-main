@@ -1,0 +1,225 @@
+[     657ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630
+[     717ms] [WARNING] Image with src "/images/hero.jpg" is using quality "90" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[     759ms] [ERROR] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <Home>
+        <IntroAnimation>
+        <Home>
+          <main className="bg-black" id="main-content">
+            <Navbar>
+            <Hero>
+            <LoadableComponent>
+              <PreloadChunks>
+              <LoadableComponent>
+                <ScrollStory>
+                  ...
+                    <div ref={{current:null}} className="building-r..." aria-hidden="true">
+                      <div className="building-i...">
+                        <div className="absolute i...">
+                          <BuildingSilhouette>
+                            <div className="relative w...">
+                              <div className="absolute b...">
+                                <div>
+                                <div className="absolute i...">
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.378433"}}
+                                  >
+                                  <div>
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.54029"}}
+                                  >
+                                  <div>
+                                  <div>
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.6375370557907312}}
+-                                   style={{opacity:"0.05"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.462881"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.550028"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.6112045093371061}}
+-                                   style={{opacity:"0.05"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.6222253351623296}}
+-                                   style={{opacity:"0.453912"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.5153878041608438}}
+-                                   style={{opacity:"0.631012"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.4089246334521336}}
+-                                   style={{opacity:"0.393947"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.308899"}}
+                                  >
+                                  <div>
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.3758256701220883}}
+-                                   style={{opacity:"0.604271"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.510717"}}
+                                  >
+                                  <div>
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.36507477654448195}}
+-                                   style={{opacity:"0.528964"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.399973"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.580066"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.5925370485261761}}
+-                                   style={{opacity:"0.05"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.62528116222434}}
+-                                   style={{opacity:"0.568005"}}
+                                  >
+                                  <div>
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.32913944866486966}}
+-                                   style={{opacity:"0.406869"}}
+                                  >
+                                  <div>
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.635001"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.5283770946621305}}
+-                                   style={{opacity:"0.05"}}
+                                  >
+                                  <div>
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.32284351908167613}}
+-                                   style={{opacity:"0.05"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.690829"}}
+                                  >
+                                  <div>
+                                  <div>
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.6793673921610446}}
+-                                   style={{opacity:"0.05"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.6497237197108172}}
+-                                   style={{opacity:"0.556631"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.4925971641754171}}
+-                                   style={{opacity:"0.505296"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.449177"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.307078"}}
+                                  >
+                                  <div>
+                                  <div>
+                                  <div>
+                                  <div>
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.698284"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.691112"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.3241804677576782}}
+-                                   style={{opacity:"0.652955"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.430276"}}
+                                  >
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.448308"}}
+                                  >
+                                  <div>
+                                  <div
+                                    className="bg-gold/10 rounded-sm"
++                                   style={{opacity:0.05}}
+-                                   style={{opacity:"0.623722"}}
+                                  >
+                                ...
+                              ...
+                        ...
+                      ...
+            ...
+    ...
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/next-devtools/userspace/app/errors/intercept-console-error.js:56
+[     823ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/favicon.ico:0

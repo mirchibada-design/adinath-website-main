@@ -1,0 +1,520 @@
+- generic [active] [ref=e1]:
+  - dialog "Intro animation" [ref=e2]:
+    - generic:
+      - img "Anantam Logo"
+    - button "Skip intro animation" [ref=e3] [cursor=pointer]: Skip
+  - main [ref=e4]:
+    - navigation "Main navigation" [ref=e5]:
+      - generic [ref=e6]:
+        - link "ANANTAM - Home" [ref=e7] [cursor=pointer]:
+          - /url: "#"
+          - img "ANANTAM by Adinath Buildwell" [ref=e8]
+        - navigation "Desktop nav" [ref=e9]:
+          - button "Overview" [ref=e10] [cursor=pointer]
+          - button "Highlights" [ref=e11] [cursor=pointer]
+          - button "Gallery" [ref=e12] [cursor=pointer]
+          - button "Amenities" [ref=e13] [cursor=pointer]
+          - button "Floor Plans" [ref=e14] [cursor=pointer]
+          - button "Location" [ref=e15] [cursor=pointer]
+          - button "Contact" [ref=e16] [cursor=pointer]
+        - generic [ref=e17]:
+          - link "Call us at +91 98290 XXXXX" [ref=e18] [cursor=pointer]:
+            - /url: tel:+91 98290 XXXXX
+            - img [ref=e19]
+            - generic [ref=e21]: +91 98290 XXXXX
+          - button "Schedule a visit" [ref=e22] [cursor=pointer]: Schedule Visit
+    - region "Hero — ANANTAM luxury apartments" [ref=e23]:
+      - img [ref=e25]
+      - generic [ref=e28]:
+        - img "Adinath Anantam" [ref=e30]
+        - paragraph [ref=e31]: Where Infinity Meets Elegance
+        - paragraph [ref=e32]: Jodhpur, Rajasthan
+        - generic [ref=e33]:
+          - link "Schedule a visit to ANANTAM" [ref=e34] [cursor=pointer]:
+            - /url: "#contact"
+            - text: Schedule a Visit
+          - link "Explore the ANANTAM project" [ref=e35] [cursor=pointer]:
+            - /url: "#overview"
+            - text: Explore Project
+      - button "Scroll down to explore" [ref=e36] [cursor=pointer]:
+        - generic [ref=e37]: Scroll
+        - img [ref=e39]
+    - region "Project story" [ref=e41]:
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - paragraph [ref=e46]: 01 — The Vision
+          - heading "Born from A Dream" [level=2] [ref=e47]
+          - paragraph [ref=e49]: In the ancient city of Jodhpur, where history and modernity converge, rises ANANTAM — a testament to architectural ambition and timeless luxury.
+        - generic [ref=e50]:
+          - paragraph [ref=e51]: 02 — The Design
+          - heading [level=2] [ref=e52]: Crafted for Eternity
+          - paragraph [ref=e54]: Every facade, every corridor, every residence has been meticulously designed to honour the grandeur of Rajasthan while embracing the demands of contemporary living.
+        - generic [ref=e55]:
+          - paragraph [ref=e56]: 03 — The Life
+          - heading [level=2] [ref=e57]: A World Unto Itself
+          - paragraph [ref=e59]: ANANTAM is not merely a home. It is a curated lifestyle — where every sunrise over the Blue City is yours to own.
+        - generic [ref=e60]:
+          - paragraph [ref=e61]: spacer
+          - heading [level=2] [ref=e62]: Born from A Dream
+          - paragraph [ref=e64]: In the ancient city of Jodhpur, where history and modernity converge, rises ANANTAM — a testament to architectural ambition and timeless luxury.
+    - region "Project overview" [ref=e140]:
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - paragraph [ref=e144]: Project Overview
+          - heading "Designed for Those Who Demand More" [level=2] [ref=e146]
+          - paragraph [ref=e147]: ANANTAM is Adinath Buildwell's most ambitious residential masterpiece — a landmark address in Jodhpur where architectural brilliance meets an elevated way of life.
+        - generic [ref=e148]:
+          - generic [ref=e149]:
+            - generic [ref=e150]: "2026"
+            - generic [ref=e152]: Possession Year
+          - generic [ref=e153]:
+            - generic [ref=e154]: 3.5+
+            - generic [ref=e156]: Acres of Land
+          - generic [ref=e157]:
+            - generic [ref=e158]: 200+
+            - generic [ref=e160]: Luxury Units
+          - generic [ref=e161]:
+            - generic [ref=e162]: B+G+12
+            - generic [ref=e164]: Floors
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - generic [ref=e168]:
+              - img [ref=e170]
+              - generic [ref=e173]:
+                - paragraph [ref=e174]: Location
+                - heading "Jodhpur, Rajasthan" [level=4] [ref=e175]
+            - paragraph [ref=e176]: Jodhpur — the Blue City of Rajasthan — is one of India's fastest-growing tier-2 cities, combining heritage charm with modern infrastructure investment.
+            - generic [ref=e177]:
+              - generic [ref=e180]: "Airport: 12 min"
+              - generic [ref=e183]: "Railway: 8 min"
+              - generic [ref=e186]: "AIIMS: 10 min"
+              - generic [ref=e189]: "City Centre: 5 min"
+          - generic [ref=e190]:
+            - generic "Adinath Buildwell logo placeholder" [ref=e191]:
+              - generic [ref=e192]: AB
+            - generic [ref=e193]:
+              - paragraph [ref=e194]: Adinath Buildwell
+              - paragraph [ref=e195]: 25+ Years · Jodhpur's Most Trusted Developer
+    - region "Project highlights" [ref=e196]:
+      - generic [ref=e197]:
+        - generic [ref=e198]:
+          - paragraph [ref=e199]: What Sets Us Apart
+          - heading "Excellence in Every Detail" [level=2] [ref=e201]
+          - paragraph [ref=e202]: ANANTAM is a convergence of extraordinary design, premium materials, and thoughtful living experiences.
+        - list [ref=e203]:
+          - listitem [ref=e204]:
+            - generic [ref=e205]: "01"
+            - img [ref=e208]
+            - heading "Premium Architecture" [level=3] [ref=e212]
+            - paragraph [ref=e214]: Designed by award-winning architects, ANANTAM's facade blends timeless craftsmanship with contemporary vision.
+          - listitem [ref=e215]:
+            - generic [ref=e216]: "02"
+            - img [ref=e219]
+            - heading "Spacious Layouts" [level=3] [ref=e224]
+            - paragraph [ref=e226]: Generously proportioned 2, 3, and 4 BHK residences with intelligent floor plans that maximize light and living space.
+          - listitem [ref=e227]:
+            - generic [ref=e228]: "03"
+            - img [ref=e231]
+            - heading "Luxury Amenities" [level=3] [ref=e233]
+            - paragraph [ref=e235]: A curated collection of world-class amenities — rooftop infinity pool, clubhouse, spa, gym, and more.
+          - listitem [ref=e236]:
+            - generic [ref=e237]: "04"
+            - img [ref=e240]
+            - heading "Prime Location" [level=3] [ref=e243]
+            - paragraph [ref=e245]: Positioned at the heart of Jodhpur, offering seamless connectivity to business hubs, schools, and lifestyle destinations.
+    - region "Building showcase gallery" [ref=e246]:
+      - generic [ref=e248]:
+        - generic [ref=e249]:
+          - paragraph [ref=e250]: Gallery
+          - heading "See the Vision" [level=2] [ref=e252]
+          - paragraph [ref=e253]: A glimpse into the spaces that await you at ANANTAM.
+        - generic [ref=e254]:
+          - button "Scroll gallery left" [disabled] [ref=e255]:
+            - img [ref=e256]
+          - button "Scroll gallery right" [ref=e258] [cursor=pointer]:
+            - img [ref=e259]
+      - region "Gallery images, scroll horizontally" [ref=e261]:
+        - 'generic "Gallery: Exterior Facade" [ref=e262]':
+          - img "Exterior Facade" [ref=e264]
+          - paragraph [ref=e267]: Exterior Facade
+          - generic [ref=e269]: "01"
+        - 'generic "Gallery: Grand Lobby" [ref=e270]':
+          - img "Grand Lobby" [ref=e272]
+          - paragraph [ref=e275]: Grand Lobby
+          - generic [ref=e277]: "02"
+        - 'generic "Gallery: Master Bedroom" [ref=e278]':
+          - img "Master Bedroom" [ref=e280]
+          - paragraph [ref=e283]: Master Bedroom
+          - generic [ref=e285]: "03"
+        - 'generic "Gallery: Infinity Pool" [ref=e286]':
+          - img "Infinity Pool" [ref=e288]
+          - paragraph [ref=e291]: Infinity Pool
+          - generic [ref=e293]: "04"
+        - 'generic "Gallery: Living Room" [ref=e294]':
+          - img "Living Room" [ref=e296]
+          - paragraph [ref=e299]: Living Room
+          - generic [ref=e301]: "05"
+        - 'generic "Gallery: Kitchen" [ref=e302]':
+          - img "Kitchen" [ref=e304]
+          - paragraph [ref=e307]: Kitchen
+          - generic [ref=e309]: "06"
+    - region "Interior walkthrough — ANANTAM apartments" [ref=e311]:
+      - generic [ref=e312]:
+        - generic [ref=e313]:
+          - paragraph [ref=e314]: The Living Experience
+          - heading "Walk Inside ANANTAM" [level=2] [ref=e315]
+          - paragraph [ref=e317]: Scroll to explore
+        - generic [ref=e318]:
+          - generic [ref=e319]:
+            - generic "Interior walkthrough of ANANTAM apartment" [ref=e321]
+            - generic:
+              - paragraph: Step Inside
+            - generic:
+              - paragraph: Crafted for Comfort
+            - generic:
+              - paragraph: Designed for Life
+          - generic [ref=e322]:
+            - generic [ref=e325]: Step Inside
+            - generic [ref=e328]: Crafted for Comfort
+            - generic [ref=e331]: Designed for Life
+    - region "Amenities" [ref=e332]:
+      - generic [ref=e334]:
+        - generic [ref=e335]:
+          - paragraph [ref=e336]: World-Class Amenities
+          - heading "A Life Fully Lived" [level=2] [ref=e338]
+          - paragraph [ref=e339]: Over 30 curated amenities designed to enrich every dimension of your daily experience.
+        - list [ref=e340]:
+          - listitem [ref=e341]:
+            - img [ref=e343]
+            - generic [ref=e347]: Infinity Pool
+          - listitem [ref=e348]:
+            - img [ref=e350]
+            - generic [ref=e356]: Fitness Center
+          - listitem [ref=e357]:
+            - img [ref=e359]
+            - generic [ref=e361]: Spa & Wellness
+          - listitem [ref=e362]:
+            - img [ref=e364]
+            - generic [ref=e367]: Landscaped Gardens
+          - listitem [ref=e368]:
+            - img [ref=e370]
+            - generic [ref=e372]: 24/7 Security
+          - listitem [ref=e373]:
+            - img [ref=e375]
+            - generic [ref=e379]: Covered Parking
+          - listitem [ref=e380]:
+            - img [ref=e382]
+            - generic [ref=e387]: Clubhouse
+          - listitem [ref=e388]:
+            - img [ref=e390]
+            - generic [ref=e392]: Kids Play Area
+          - listitem [ref=e393]:
+            - img [ref=e395]
+            - generic [ref=e399]: High-Speed Internet
+          - listitem [ref=e400]:
+            - img [ref=e402]
+            - generic [ref=e404]: Café Lounge
+          - listitem [ref=e405]:
+            - img [ref=e407]
+            - generic [ref=e409]: Theatre Room
+          - listitem [ref=e410]:
+            - img [ref=e412]
+            - generic [ref=e414]: Power Backup
+        - paragraph [ref=e415]: + 20 more amenities · Full amenity list available on request
+    - region "Location advantage" [ref=e416]:
+      - generic [ref=e417]:
+        - generic [ref=e418]:
+          - paragraph [ref=e419]: Location
+          - heading "Perfectly Positioned" [level=2] [ref=e421]
+          - paragraph [ref=e422]: At the crossroads of convenience and culture — Jodhpur's most connected address.
+        - generic [ref=e423]:
+          - generic "Location map — Jodhpur, Rajasthan" [ref=e424]:
+            - generic [ref=e425]:
+              - img [ref=e426]
+              - generic [ref=e434]: ANANTAM
+              - generic [ref=e435]:
+                - paragraph [ref=e436]: Jodhpur
+                - paragraph [ref=e437]: Rajasthan, India
+              - generic [ref=e439]: "N"
+          - generic [ref=e442]:
+            - heading "Everything Within Reach" [level=3] [ref=e443]
+            - generic [ref=e444]:
+              - generic [ref=e445]:
+                - img [ref=e447]
+                - generic [ref=e450]: Jodhpur Airport
+              - generic [ref=e451]:
+                - img [ref=e452]
+                - generic [ref=e455]: 12 min
+            - generic [ref=e456]:
+              - generic [ref=e457]:
+                - img [ref=e459]
+                - generic [ref=e462]: Jodhpur Railway Station
+              - generic [ref=e463]:
+                - img [ref=e464]
+                - generic [ref=e467]: 8 min
+            - generic [ref=e468]:
+              - generic [ref=e469]:
+                - img [ref=e471]
+                - generic [ref=e474]: AIIMS Jodhpur
+              - generic [ref=e475]:
+                - img [ref=e476]
+                - generic [ref=e479]: 10 min
+            - generic [ref=e480]:
+              - generic [ref=e481]:
+                - img [ref=e483]
+                - generic [ref=e486]: Mehrangarh Fort
+              - generic [ref=e487]:
+                - img [ref=e488]
+                - generic [ref=e491]: 15 min
+            - generic [ref=e492]:
+              - generic [ref=e493]:
+                - img [ref=e495]
+                - generic [ref=e498]: MBM Engineering College
+              - generic [ref=e499]:
+                - img [ref=e500]
+                - generic [ref=e503]: 5 min
+            - paragraph [ref=e505]: Jodhpur is the second largest city in Rajasthan and one of India's fastest growing smart cities with investments in metro rail, ring road, and IT parks.
+    - region "Floor plans" [ref=e506]:
+      - generic [ref=e508]:
+        - generic [ref=e509]:
+          - paragraph [ref=e510]: Residences
+          - heading "Choose Your Space" [level=2] [ref=e512]
+          - paragraph [ref=e513]: From intimate 2 BHK residences to sprawling penthouses — every layout crafted with intention.
+        - tablist "Floor plan types" [ref=e514]:
+          - tab "2 BHK" [selected] [ref=e515] [cursor=pointer]: 2 BHK
+          - tab "3 BHK" [ref=e517] [cursor=pointer]
+          - tab "4 BHK" [ref=e518] [cursor=pointer]
+          - tab "4 BHK Penthouse" [ref=e519] [cursor=pointer]
+        - tabpanel [ref=e520]:
+          - generic "2 BHK floor plan diagram" [ref=e521]:
+            - generic [ref=e522]:
+              - generic [ref=e525]: Master BR
+              - generic [ref=e526]:
+                - generic [ref=e528]: Living / Dining
+                - generic [ref=e530]: Kitchen
+            - generic [ref=e531]: Most Popular
+          - generic [ref=e532]:
+            - generic [ref=e533]:
+              - paragraph [ref=e534]: Configuration
+              - heading "2 BHK" [level=3] [ref=e535]
+            - generic [ref=e537]:
+              - generic [ref=e538]:
+                - generic [ref=e539]:
+                  - img [ref=e540]
+                  - generic [ref=e542]: Carpet Area
+                - paragraph [ref=e543]: 1,050 sq.ft.
+              - generic [ref=e544]:
+                - generic [ref=e545]:
+                  - img [ref=e546]
+                  - generic [ref=e549]: Starting Price
+                - paragraph [ref=e550]: ₹ 75 Lacs onwards
+            - generic [ref=e551]:
+              - generic [ref=e554]: Double-height lobby entry
+              - generic [ref=e557]: Floor-to-ceiling windows
+              - generic [ref=e560]: Modular kitchen with island
+              - generic [ref=e563]: Premium Italian marble flooring
+              - generic [ref=e566]: Smart home automation ready
+            - generic [ref=e567]:
+              - link "Enquire about 2 BHK" [ref=e568] [cursor=pointer]:
+                - /url: "#contact"
+                - text: Enquire Now
+              - link "Request 2 BHK brochure" [ref=e569] [cursor=pointer]:
+                - /url: "#contact"
+                - text: Request Brochure
+            - paragraph [ref=e570]: "* All dimensions are approximate. Actual carpet area may vary subject to final drawings. Prices are indicative and subject to change."
+    - region "About Adinath Buildwell — developer trust" [ref=e571]:
+      - generic [ref=e572]:
+        - generic [ref=e573]:
+          - paragraph [ref=e574]: The Builder
+          - heading "Built on Trust, Delivered with Pride" [level=2] [ref=e576]
+        - generic [ref=e577]:
+          - generic "Adinath Buildwell — project image" [ref=e579]:
+            - img "ANANTAM by Adinath Buildwell" [ref=e580]
+            - generic [ref=e581]:
+              - img [ref=e582]
+              - generic [ref=e585]: Award Winning Builder
+          - generic [ref=e586]:
+            - heading "Adinath Buildwell" [level=3] [ref=e588]
+            - paragraph [ref=e589]: Founded over 25 years ago, Adinath Buildwell has grown to become Jodhpur's most trusted real estate developer — a name synonymous with integrity, quality construction, and on-time delivery.
+            - paragraph [ref=e590]: With 50+ completed projects housing over 5,000 families, every Adinath development is a testament to uncompromising standards and the belief that great architecture can elevate how people live.
+            - generic [ref=e591]:
+              - generic [ref=e592]:
+                - paragraph [ref=e593]: 25+
+                - paragraph [ref=e594]: Years of Excellence
+              - generic [ref=e595]:
+                - paragraph [ref=e596]: 50+
+                - paragraph [ref=e597]: Projects Delivered
+              - generic [ref=e598]:
+                - paragraph [ref=e599]: 5000+
+                - paragraph [ref=e600]: Happy Families
+              - generic [ref=e601]:
+                - paragraph [ref=e602]: 100%
+                - paragraph [ref=e603]: On-Time Delivery
+            - generic [ref=e604]:
+              - generic [ref=e605]:
+                - img [ref=e606]
+                - generic [ref=e609]: RERA Registered Developer
+              - generic [ref=e610]:
+                - img [ref=e611]
+                - generic [ref=e614]: ISO 9001:2015 Certified
+              - generic [ref=e615]:
+                - img [ref=e616]
+                - generic [ref=e619]: Multiple CREDAI awards for excellence
+              - generic [ref=e620]:
+                - img [ref=e621]
+                - generic [ref=e624]: Bank-approved project
+              - generic [ref=e625]:
+                - img [ref=e626]
+                - generic [ref=e629]: Transparent transactions & legal title
+    - region "Contact and lead generation" [ref=e630]:
+      - generic [ref=e632]:
+        - generic [ref=e633]:
+          - paragraph [ref=e634]: Get In Touch
+          - heading "Begin Your Journey" [level=2] [ref=e636]
+          - paragraph [ref=e637]: Fill in your details and our team will get in touch within 24 hours.
+        - form "Enquiry form" [ref=e639]:
+          - generic [ref=e640]:
+            - generic [ref=e641]:
+              - generic [ref=e642]:
+                - img [ref=e643]
+                - text: Full Name *
+              - textbox "Full Name *" [ref=e646]:
+                - /placeholder: Your full name
+            - generic [ref=e647]:
+              - generic [ref=e648]:
+                - img [ref=e649]
+                - text: Mobile Number *
+              - textbox "Mobile Number *" [ref=e651]:
+                - /placeholder: +91 XXXXX XXXXX
+          - generic [ref=e652]:
+            - generic [ref=e653]:
+              - generic [ref=e654]:
+                - img [ref=e655]
+                - text: Email Address
+              - textbox "Email Address" [ref=e658]:
+                - /placeholder: your@email.com
+            - generic [ref=e659]:
+              - generic [ref=e660]:
+                - img [ref=e661]
+                - text: Preferred Configuration
+              - combobox "Preferred Configuration" [ref=e664] [cursor=pointer]:
+                - option "Select configuration" [disabled] [selected]
+                - option "2 BHK"
+                - option "3 BHK"
+                - option "4 BHK"
+                - option "4 BHK Penthouse"
+          - generic [ref=e665]:
+            - generic [ref=e666]: Message (Optional)
+            - textbox "Message (Optional)" [ref=e667]:
+              - /placeholder: Any specific requirements or questions...
+          - generic [ref=e668]:
+            - button "Submit form to schedule a visit" [ref=e669] [cursor=pointer]: Schedule a Visit
+            - button "Submit form to request brochure" [ref=e670] [cursor=pointer]: Request Brochure
+          - paragraph [ref=e671]: By submitting, you agree to be contacted by Adinath Buildwell regarding this project. Your details are kept confidential and never shared with third parties.
+        - generic [ref=e672]:
+          - generic [ref=e673]:
+            - img [ref=e674]
+            - generic [ref=e676]:
+              - paragraph [ref=e677]: Call Us
+              - link "Call Adinath Buildwell" [ref=e678] [cursor=pointer]:
+                - /url: tel:+919829000000
+                - text: +91 98290 XXXXX
+          - generic [ref=e680]:
+            - img [ref=e681]
+            - generic [ref=e684]:
+              - paragraph [ref=e685]: Email Us
+              - link "Email Adinath Buildwell" [ref=e686] [cursor=pointer]:
+                - /url: mailto:info@adinath.net.in
+                - text: info@adinath.net.in
+    - contentinfo "Site footer" [ref=e687]:
+      - generic [ref=e690]:
+        - generic [ref=e691]:
+          - img "Adinath Anantam" [ref=e692]
+          - paragraph [ref=e694]: A landmark luxury residential project redefining the skyline of Jodhpur, Rajasthan.
+          - generic [ref=e695]:
+            - link "Follow us on Instagram" [ref=e696] [cursor=pointer]:
+              - /url: https://instagram.com/adinathjpr
+              - img [ref=e697]
+            - link "Follow us on Facebook" [ref=e700] [cursor=pointer]:
+              - /url: https://facebook.com/adinathbuilders
+              - img [ref=e701]
+            - link "Follow us on YouTube" [ref=e703] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e704]
+            - link "Follow us on LinkedIn" [ref=e707] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e708]
+        - generic [ref=e712]:
+          - heading "Quick Links" [level=3] [ref=e713]
+          - navigation "Footer navigation" [ref=e714]:
+            - list [ref=e715]:
+              - listitem [ref=e716]:
+                - link "Overview" [ref=e717] [cursor=pointer]:
+                  - /url: "#overview"
+              - listitem [ref=e718]:
+                - link "Highlights" [ref=e719] [cursor=pointer]:
+                  - /url: "#highlights"
+              - listitem [ref=e720]:
+                - link "Gallery" [ref=e721] [cursor=pointer]:
+                  - /url: "#gallery"
+              - listitem [ref=e722]:
+                - link "Amenities" [ref=e723] [cursor=pointer]:
+                  - /url: "#amenities"
+              - listitem [ref=e724]:
+                - link "Floor Plans" [ref=e725] [cursor=pointer]:
+                  - /url: "#floor-plans"
+              - listitem [ref=e726]:
+                - link "Location" [ref=e727] [cursor=pointer]:
+                  - /url: "#location"
+              - listitem [ref=e728]:
+                - link "Contact" [ref=e729] [cursor=pointer]:
+                  - /url: "#contact"
+        - generic [ref=e730]:
+          - heading "Project" [level=3] [ref=e731]
+          - generic [ref=e732]:
+            - generic [ref=e733]:
+              - paragraph [ref=e734]: Configuration
+              - paragraph [ref=e735]: 2, 3, 4 BHK + Penthouse
+            - generic [ref=e736]:
+              - paragraph [ref=e737]: Area
+              - paragraph [ref=e738]: 1,050 – 3,200 sq.ft.
+            - generic [ref=e739]:
+              - paragraph [ref=e740]: Floors
+              - paragraph [ref=e741]: B+G+12
+            - generic [ref=e742]:
+              - paragraph [ref=e743]: Status
+              - paragraph [ref=e744]: Under Construction
+            - generic [ref=e745]:
+              - paragraph [ref=e746]: Possession
+              - paragraph [ref=e747]: 2026 (Est.)
+        - generic [ref=e748]:
+          - heading "Contact" [level=3] [ref=e749]
+          - generic [ref=e750]:
+            - generic [ref=e751]:
+              - img [ref=e752]
+              - generic [ref=e755]:
+                - paragraph [ref=e756]: Address
+                - generic [ref=e757]: Jodhpur, Rajasthan, India — 342001
+            - generic [ref=e758]:
+              - img [ref=e759]
+              - generic [ref=e761]:
+                - paragraph [ref=e762]: Phone
+                - link "+91 98290 XXXXX" [ref=e763] [cursor=pointer]:
+                  - /url: tel:+91 98290 XXXXX
+            - generic [ref=e764]:
+              - img [ref=e765]
+              - generic [ref=e768]:
+                - paragraph [ref=e769]: Email
+                - link "info@adinath.net.in" [ref=e770] [cursor=pointer]:
+                  - /url: mailto:info@adinath.net.in
+      - generic [ref=e772]:
+        - paragraph [ref=e773]: © 2026 Adinath Buildwell. All rights reserved.
+        - generic [ref=e774]:
+          - link "Privacy Policy" [ref=e775] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms of Use" [ref=e776] [cursor=pointer]:
+            - /url: "#"
+          - link "RERA" [ref=e777] [cursor=pointer]:
+            - /url: "#"
+      - button "Scroll back to top" [ref=e778] [cursor=pointer]: ↑
+  - alert [ref=e779]

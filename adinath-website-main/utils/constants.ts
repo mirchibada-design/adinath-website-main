@@ -97,7 +97,6 @@ export const LOCATION_HIGHLIGHTS = [
   { place: 'AIIMS Jodhpur', distance: '10 min', direction: 'south' },
   { place: 'Mehrangarh Fort', distance: '15 min', direction: 'west' },
   { place: 'MBM Engineering College', distance: '5 min', direction: 'nearby' },
-  { place: 'High Court of Rajasthan', distance: '7 min', direction: 'nearby' },
 ];
 
 // ─── Floor Plans ─────────────────────────────────────────────

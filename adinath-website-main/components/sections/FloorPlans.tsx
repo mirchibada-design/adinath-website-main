@@ -96,7 +96,7 @@ export default function FloorPlans() {
 
             {/* ── Floor Plan Image Placeholder ──────────────── */}
             <div
-              className="relative aspect-[4/3] border border-white/8 overflow-hidden image-placeholder"
+              className="relative aspect-[4/3] border border-white/[0.04] overflow-hidden image-placeholder"
               aria-label={`${activePlan.type} floor plan diagram`}
             >
               {/*
@@ -184,27 +184,6 @@ export default function FloorPlans() {
           </motion.div>
         </AnimatePresence>
 
-        {/* ── All Configurations Summary ────────────────────── */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-px mt-16 border border-white/5">
-          {FLOOR_PLANS.map((plan) => (
-            <button
-              key={plan.id}
-              onClick={() => setActiveId(plan.id)}
-              className={`
-                p-6 text-left transition-all duration-300
-                border-r border-white/5 last:border-r-0
-                hover:bg-white/[0.02]
-                ${activeId === plan.id ? 'bg-white/[0.03]' : ''}
-              `}
-              aria-label={`Select ${plan.type}`}
-            >
-              <p className={`font-playfair text-xl mb-1 ${activeId === plan.id ? 'text-gold' : 'text-white/60'}`}>
-                {plan.type}
-              </p>
-              <p className="font-dm-sans text-[10px] text-white/30 tracking-wide">{plan.area}</p>
-            </button>
-          ))}
-        </div>
       </Container>
     </section>
   );

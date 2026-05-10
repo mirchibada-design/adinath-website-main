@@ -52,15 +52,11 @@ export default function Footer() {
 
           {/* ── Column 1: Logo & About ────────────────────── */}
           <div className="lg:col-span-1 space-y-5">
-            {/* Logo placeholder — replace with <Image> */}
-            <div>
-              <p className="font-playfair text-2xl tracking-[0.3em] text-white uppercase">
-                ANANTAM
-              </p>
-              <p className="font-dm-sans text-[10px] tracking-[0.3em] text-gold/60 uppercase mt-1">
-                by Adinath Buildwell
-              </p>
-            </div>
+            <img
+              src="/logo/adinath%20anantam%20logo%20full.png"
+              alt="Adinath Anantam"
+              style={{ width: 160, height: 'auto' }}
+            />
 
             <div className="w-8 h-px bg-gold/40" aria-hidden="true" />
 
